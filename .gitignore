@@ -1,0 +1,3 @@
+#ignore sass processing files
+**/.sass-cache
+**/.sass-cache/*
