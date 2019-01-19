@@ -39,3 +39,8 @@
 .cls-1:hover{
     fill: aqua;
 }
+
+.one-half, .column, .Form{
+    margin-top: 15px;
+    
+}
