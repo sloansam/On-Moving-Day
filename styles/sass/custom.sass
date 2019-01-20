@@ -1,27 +1,26 @@
 // global
 
 .section
-    height: 100vH
     display: flex
     align-items: center
-    justify-content: center
+    justify-content: space-between
+    height: 100vH
 
 // division custom styles
 .header
-    height: 20vH
-    width: 100%
+    height: 17vH
     display: flex
     align-items: center
-    justify-content: flex-end
-    position: fixed
+    justify-content: space-between
     background-color: white
-    z-index: 1
-    top: 0
-    right: 0
+    margin: auto
+    padding: 0
+    h3
+        padding: 0 
+        margin: 0 
     nav
         display: flex
         justify-content: space-between
-        margin-right: 10%
         a
             text-decoration: none
             color: #999999
@@ -36,11 +35,24 @@
 
 .hero
     background-color: #7EE0C1
-    height: 80vH
-    margin-top: 20vH
+    height: 83vH
 
 .our-service
     background-color: #EDEFA3
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding-top: 5vH
+    padding-bottom: 5vH
+    height: 200vH
+    @media (min-width: 550px)
+        height: 100vH
+    img 
+        height: 100vH
+        width: auto
+        padding: 0
+        margin: 0
+        
 
 .storage
     background-color: #FFE1FF
@@ -55,8 +67,15 @@
     height: 20vH
     background: #FFD9B6
     display: flex
-    align-items: center
-    justify-content: center
+    align-items: flex-end
+    justify-content: space-between
+    .links
+        margin: 0
+    a
+        color: black
+        text-decoration: none
+        padding-right: 15px
+
 
 // elements
 .social-icons
