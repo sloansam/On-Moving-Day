@@ -1,5 +1,4 @@
-// global
-
+// global    
 .section
     display: flex
     align-items: center
@@ -38,16 +37,18 @@
     height: 83vH
 
 .our-service
-    background-color: #EDEFA3
+    background-image: url("../../images/PackingGraphic.svg")
+    opacity: 0.5
+    background-repeat: no-repeat
+    background-position: 80% 0%
     display: flex
     justify-content: space-around
     align-items: center
     padding-top: 5vH
     padding-bottom: 5vH
-    height: 200vH
     @media (min-width: 550px)
         height: 100vH
-    img 
+    object 
         height: 100vH
         width: auto
         padding: 0
@@ -67,8 +68,9 @@
     height: 20vH
     background: #FFD9B6
     display: flex
-    align-items: flex-end
-    justify-content: space-between
+    justify-content: space-around
+    margin: auto
+    padding: 0
     .links
         margin: 0
     a
