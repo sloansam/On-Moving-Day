@@ -6,22 +6,38 @@
     align-items: center
     justify-content: center
 
-// section modules
-nav
-    background: salmon
-    text-align: right
-    position: relative
-    a
-        text-decoration: none
-        color: white
-        &:last-of-type
-            margin-right: 10%
-
-header 
-
 // division custom styles
+.header
+    height: 20vH
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: fixed
+    background-color: white
+    z-index: 1
+    top: 0
+    right: 0
+    nav
+        display: flex
+        justify-content: space-between
+        margin-right: 10%
+        a
+            text-decoration: none
+            color: #999999
+            font-weight: bold
+            padding: 15px
+            transition: 0.3s
+            &:hover
+                color: black
+                background: #F2F2F2
+                border-radius: 15px
+
+
 .hero
     background-color: #7EE0C1
+    height: 80vH
+    margin-top: 20vH
 
 .our-service
     background-color: #EDEFA3
