@@ -15,7 +15,6 @@
     background-color: white
     margin: auto
     padding: 0
-    background-color: grey
     h3
         padding: 0 
         margin: 0 
@@ -67,17 +66,46 @@
 .footer
     height: 20vH
     background: #FFD9B6
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: white
+    margin: 0 auto
+    padding: 0
+    background-color: grey
     a
         color: black
         text-decoration: none
-        padding-right: 15px
+    .footer-row
+        max-width: 960px
+        width: 100%
+        display: flex
+        flex: 1
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        @media (min-width: 550px)
+                width: 100%
+                justify-content: space-between
+                flex-direction: row
+        .footer-social
+            display: flex
+            justify-content: space-between
+            width: 50%
+            @media (min-width: 550px)
+                width: 25%
 
+        .footer-links
+            display: flex
+            justify-content: space-between
+            a 
+                padding: 0px 15px
 
 // elements
 .social-icons
     height: 25px
-    width: auto 
-    margin-left: 10%
 
 // SVG
 .cls-1
