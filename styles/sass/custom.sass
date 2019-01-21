@@ -15,7 +15,6 @@
     background-color: white
     margin: auto
     padding: 0
-    background-color: grey
     h3
         padding: 0 
         margin: 0 
@@ -54,15 +53,17 @@
         padding: 0
         margin: 0
         
+.service
+    margin-top: 20%    // just added this
 
 .storage
-    background-color: #FFE1FF
+    background-color: #21B8A3
 
 .guarantee
     background-color: #E5FFE3
 
 .quotes
-    background-color: salmon
+    background-color: #378EA9
 
 .footer
     height: 20vH
@@ -73,7 +74,7 @@
     background-color: white
     margin: 0 auto
     padding: 0
-    background-color: cyan
+    background-color: grey
     a
         color: black
         text-decoration: none
@@ -85,6 +86,7 @@
         justify-content: center
         flex-wrap: wrap
         align-items: center
+        justify-content: space-between
         flex-direction: column
         @media (min-width: 550px)
                 width: 100%
@@ -97,27 +99,21 @@
             @media (min-width: 550px)
                 width: 25%
 
-    a
-        color: black
-        text-decoration: none
-        padding-right: 15px
-
-    a
-        color: black
-        text-decoration: none
-        padding-right: 15px
-    a
-        color: black
-        text-decoration: none
-        padding-right: 15px
-
-
+        .footer-links
+            display: flex
+            justify-content: space-between
+            a 
+                padding: 0px 15px
 
 // elements
 .social-icons
     height: 25px
-    width: auto 
-    margin-left: 10%
+
+#exampleEmailInput
+    width: 460px
+
+#yourName
+    width: 460px
 
 // SVG
 .cls-1
