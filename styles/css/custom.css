@@ -1,21 +1,21 @@
 /*
 Error: Invalid mixin "======".
-        on line 100 of sass/custom.sass
+        on line 101 of sass/custom.sass
 
-95:             display: flex
-96:             justify-content: space-between
-97:             width: 50%
-98:             @media (min-width: 550px)
-99:                 width: 25%
-100: =======
-101:     a
-102:         color: black
-103:         text-decoration: none
-104:         padding-right: 15px
-105: >>>>>>> parent of 59a92a5... fixed footer
+96:             display: flex
+97:             justify-content: space-between
+98:             width: 50%
+99:             @media (min-width: 550px)
+100:                 width: 25%
+101: =======
+102:     a
+103:         color: black
+104:         text-decoration: none
+105:         padding-right: 15px
+106: >>>>>>> parent of 59a92a5... fixed footer
 
 Backtrace:
-sass/custom.sass:100
+sass/custom.sass:101
 /Users/samforderer/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:1119:in `parse_mixin_definition'
 /Users/samforderer/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:658:in `parse_line'
 /Users/samforderer/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:539:in `build_tree'
@@ -43,4 +43,4 @@ sass/custom.sass:100
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 100 of sass/custom.sass\A \A 95:             display: flex\A 96:             justify-content: space-between\A 97:             width: 50%\A 98:             @media (min-width: 550px)\A 99:                 width: 25%\A 100: =======\A 101:     a\A 102:         color: black\A 103:         text-decoration: none\A 104:         padding-right: 15px\A 105: >>>>>>> parent of 59a92a5... fixed footer"; }
+  content: "Error: Invalid mixin \"======\".\A         on line 101 of sass/custom.sass\A \A 96:             display: flex\A 97:             justify-content: space-between\A 98:             width: 50%\A 99:             @media (min-width: 550px)\A 100:                 width: 25%\A 101: =======\A 102:     a\A 103:         color: black\A 104:         text-decoration: none\A 105:         padding-right: 15px\A 106: >>>>>>> parent of 59a92a5... fixed footer"; }
