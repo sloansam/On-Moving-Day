@@ -33,57 +33,101 @@
 
 
 .hero
-    background-color: #7EE0C1
     height: 83vH
+    .rower
+        max-width: 960px
+        width: 100%
+        display: flex
+        margin: 0 auto
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        padding: 0
+        z-index: 500
+        .text
+            max-width: 480px
+            width: 100%
+        img
+            max-width: 50%
+            position: absolute
+            left: 40%
 
 .our-service
-    background-image: url("../../images/PackingGraphic.svg")
-    opacity: 0.5
-    background-repeat: no-repeat
-    background-position: 80% 0%
+    background-color: #EDEFA3
     display: flex
     justify-content: space-around
     align-items: center
     padding-top: 5vH
     padding-bottom: 5vH
+    height: 200vH
     @media (min-width: 550px)
         height: 100vH
-    object 
+    img 
         height: 100vH
         width: auto
         padding: 0
         margin: 0
         
+.service
 
 .storage
-    background-color: #FFE1FF
+    background-color: #21B8A3
 
 .guarantee
     background-color: #E5FFE3
 
 .quotes
-    background-color: salmon
+    background-color: #378EA9
 
 .footer
     height: 20vH
     background: #FFD9B6
     display: flex
-    justify-content: space-around
-    margin: auto
+    align-items: center
+    justify-content: center
+    background-color: white
+    margin: 0 auto
     padding: 0
-    .links
-        margin: 0
+    background-color: grey
     a
         color: black
         text-decoration: none
-        padding-right: 15px
+    .footer-row
+        max-width: 960px
+        width: 100%
+        display: flex
+        flex: 1
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        flex-direction: column
+        @media (min-width: 550px)
+                width: 100%
+                justify-content: space-between
+                flex-direction: row
+        .footer-social
+            display: flex
+            justify-content: space-between
+            width: 50%
+            @media (min-width: 550px)
+                width: 25%
 
+        .footer-links
+            display: flex
+            justify-content: space-between
+            a 
+                padding: 0px 15px
 
 // elements
 .social-icons
     height: 25px
-    width: auto 
-    margin-left: 10%
+
+#exampleEmailInput
+    width: 460px
+
+#yourName
+    width: 460px
 
 // SVG
 .cls-1
