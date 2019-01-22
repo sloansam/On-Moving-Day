@@ -1,0 +1,25 @@
+{
+  "name": "on-moving-day",
+  "version": "1.0.0",
+  "description": "On Moving Day Website Dev Repo",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass styles/sass/custom.sass styles/css/custom.css --output-style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "nodemon -e sass -x \"npm run 'build-css'\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloansam/On-Moving-Day.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sloansam/On-Moving-Day/issues"
+  },
+  "homepage": "https://github.com/sloansam/On-Moving-Day#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  }
+}
