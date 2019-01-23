@@ -1,9 +1,10 @@
 // color variables
 $lightgrey: #f2f2f2
+$orangey: #ad2d0d
 
 // section colors
 $packing: #ffffff
-$storage: #3ea074
+$storage: #6acc99
 $care: #fec9ff
 $quote: #ffffff
     
@@ -17,12 +18,13 @@ $quote: #ffffff
 // division custom styles
 .header
     height: 17vH
+    min-width: 100vW
     display: flex
     align-items: center
     justify-content: flex-start
     background-color: white
     padding: 0
-    box-sizing: border-box;
+    box-shadow: 0px -10px 15px 1px #000 
     @media (min-width: 750px)
         justify-content: space-between
     h3
@@ -103,11 +105,21 @@ $quote: #ffffff
     margin: 0 auto
     padding: 0
     img 
+        max-height: 
         @media (min-width: 750px)
             position: relative
             top: 0
             left: 0
 
+.our-services
+    height: 15vH
+    background: $orangey
+    color: white
+    .rower
+        align-items: center
+        h2 
+            padding: 0
+            margin: 0
 
         
 .storage
@@ -115,6 +127,11 @@ $quote: #ffffff
 
 .guarantee
     background-color: $care
+    height: auto
+    padding: 50px 0px
+    display: flex
+    img
+        order: 1
 
 .quotes
     background-color: #378EA9
