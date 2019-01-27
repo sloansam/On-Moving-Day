@@ -49,6 +49,7 @@ $quote: #ffffff
     background: $lightgrey
     margin: 0 auto
 
+//global row class
 .rower
     max-width: 960px
     width: 100%
@@ -130,9 +131,52 @@ $quote: #ffffff
     img
         order: 1
 
+// form styling
 .quotes
     background-color: #378EA9
+    display: flex
+    flex-direction: column
+    padding: 10% 0px
+    .form-row
+        display: flex
+        justify-content: flex-start
+        flex-wrap: wrap
+        align-items: flex-start
+        flex-direction: column
+        flex-wrap: wrap
+        margin: 0 auto
+        width: 85%
+        padding: 0 20px
+        margin-bottom: 30px
+        > input[type]
+            width: 100%
+        > textarea 
+            width: 100%
+            resize: none
+        > input[type="submit"]
+            background: rgb(173, 45, 13)
+            border: none
+            color: white
+            transition: 0.2s
+            margin-bottom: 0%
+            &:hover
+                background: #c13411
 
+    .legacy-form-row
+        width: 85%
+        > legend
+            margin-bottom: 15px
+        > input[type="radio"]
+            float: left
+            background: red
+            margin-top: 2px
+            float: left
+            margin-bottom: 30px
+        > label
+            float: left
+            display: block
+            padding: 0 20px 0 10px
+            
 .footer
     height: 20vH
     background: #FFD9B6

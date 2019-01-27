@@ -101,7 +101,7 @@
 <div class="section guarantee">
   <div class="container">
     <div class="one-half column">
-        <h4>Our Care Guarantee</h4>
+       <h4>Our Care Guarantee</h4>
         <p>Our specialists will meet you in home or over the phone to discuss your moving
         needs. Reviewing the job with you will ensure all the demands of your move are met with intricacy and efficiency.
         We provide the care necessary to get get your belongings to there new home or destination and provide the equipment
@@ -116,23 +116,53 @@
 <!--Form Section-->
 
   <div class="section quotes">
-    <div class="container">
-        <form action="#" method="POST">
-		<p>
-       		<label for="name">Name:</label>
-            <input type="text" id="name" placeholder="John Smith" name="user_name">
-		</p>
-		<p>
-            <label for="email">Email:</label>
-            <input type="email" id="mail" placeholder="johnsmith@gmail.com" name="user_email">
-		</p>
-		<p>
-			<label for="tel">Telephone:</label>
-			<input type="tel" id="tel" placeholder="905-555-5555" name="tel">
-			<span class="note">Format: 123-456-7890</span>
-		</p>
-		</div>
-        </form>
+    <div class="rower">
+    <h4>Get a quote!</h4>
+    </div>
+    <div class="form-row">
+      <label for="full-name">Name</label>
+      <input id="full-name" name="full-name" type="text">
+      <label for="email">Email</label>
+      <input id="email"
+             name="email"
+             type="email"
+             placeholder="joe@example.com"/>
+    </div>
+    <fieldset class="legacy-form-row">
+      <legend>Move Type</legend>
+      <input id="move-type1"
+             name="move-type"
+             type="radio"
+             value="residential"/>
+      <label for="move-type1">Residential</label>
+      <input id="move-type2"
+             name="move-type"
+             type="radio"
+             value="commercial"/>
+      <label for="move-type1">Commercial</label> 
+    </fieldset>
+    <div class="form-row">
+      <label for="loc-from">From</label>
+      <input id="loc-from"
+             name="loc-from"
+             type="text"/>
+      <label for="loc-to">To</label>
+      <input id="loc-to"
+             name="loc-to"
+             type="text"/>
+    </div>
+    <div class="form-row">
+      <label for="move-date">Move Day</label>
+      <input id="day"
+             name="day"
+             type="date"/>
+    </div>
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div class="form-row">
+      <input type="submit">
     </div>
   </div>  
 
