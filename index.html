@@ -36,6 +36,10 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header class="info-header">
+      <a href="tel:289-981-7911"><span class="fa fa-phone" aria-hidden="true"></span>Telephone</a><span>|</span>
+      <a href="mailto:onmovingday@gmail.com"><span class="fa fa-envelope" aria-hidden="true"></span>email</a>
+  </header>
   <header class="section header" id="main-menu-toggle">
     <div class="rower">
       <h3 class="">On Moving Day</h3>
@@ -70,12 +74,10 @@
   <div class="section hero">
     <div class="rower">
       <div class="text">
-        <h4>We're Here for You</h4>
-        <p>We truly care about the families we are
-            helping and want to help them have a
-            comfortable transition into their new
-            homes.</p>
-        <a class="button button-primary" href="#">Quote Us!</a>
+        <h4>We'll Take it From Here</h4>
+        <p>On Moving Day is the GTA's premier full-service moving and storage company. We specialize in helping you get your belongings or products to the next location, stress-free and on time.</p>
+        <a class="button button-primary" href="#services1">Quote Us</a>
+        <a class="button button-primary" href="#services1"><span class="fa fa-phone callbutton" aria-hidden="true"></span> Call us</a>
       </div>
         <img src="images/HousesRoadandTruckOp.svg" alt="packingSVG">
     </div>
@@ -90,19 +92,14 @@
   <div class="our-service section">
     <div class="rower">
         <div class="text">
-        <h4 class="service-header">Packing and Moving</h4>
-        <p>We offer a full range of packing,
-          moving and storage options
-          All your needs will be accounted for, including such items as:</p>
-          <ul>
-            <li>Fridges and washers</li>
-            <li>Fragile items (i.e. paintings, lamps)</li>
-            <li>Other particular items such as, pianos and any other necessary requirements</li>
-            <li>Provide disassembly and reassembly of items as well as plastic wrap and protective moving blankets</li>
-          </ul>
+        <h4 class="service-header">Moving and Packing</h4>
+        <p>We offer various services to ensure your move is as uncomplicated and as smooth as possible we offer a full range of Packing, Moving and Storage services that cover all types of moving. To ensure an accurate estimate, our specialists will need to review your move details with you. An in-home meeting is the best way to complete this, however this can be completed over the phone as well if required. We will go over everything, but importantly if there are any large appliances such as fridges and washers, fragile items such as paintings and lamps, items that require particular handling such as pianos, as well as any packing requirements that are needed for these items.
+        </p>
       </div>
 	  <img src="images/PackingGraphic.svg" alt="packingSVG">
     </div>
+  </div>
+  <div class="promo section">
   </div>
 
 <!--Storage Section-->
@@ -112,10 +109,8 @@
           <img src="images/storageUnitOp.svg" alt="storageSVG" class="one-half column">
       <div class="one-half column service">
         <h4 class="service-header">Storage</h4>
-        <p>We are pleased to brag that we have partnership relations across the province and even outside the country.
-        We provide an ideal environment for storing belongings for long or short term, or even for a short stop while waiting to
-        relocate. Our specialists pack, organise, code and seal everything into a locked vault which you have complete access to. These
-        storage facilities are fully insured and security monitored. </p>
+        <p>For your convenience, we have partnerships with storage facilities across the province and even outside the country.
+        We provide an ideal environment for storing belongings, long or short term. Our specialists pack, organise, code and seal everything into a locked vault which you have complete access to. </p>
       </div>
     </div>
   </div>
@@ -129,7 +124,7 @@
         <p>Our specialists will meet you in home or over the phone to discuss your moving
         needs. Reviewing the job with you will ensure all the demands of your move are met with intricacy and efficiency.
         We provide the care necessary to get get your belongings to there new home or destination and provide the equipment
-        to do so. We also guarantee your moving charge will be within 10% of your quote.</p>
+        to do so.</p>
     </div>
     <div class="one-half column Guarantee">
       <img src="images/careGuaranteeOp.svg" alt="guaranteeSVG">
@@ -141,12 +136,17 @@
 
   <section class="section quotes" id="services1">
     <div class="rower"  id="#quotation">
-    <h4 class="quote-header">Get a quote!</h4>
+    <h4 class="quote-header">Get a quote</h4>
+    <p>We are dedicated to delivering honest, reliable, fast, quality full service moving. Our rates are affordable and we even offer flat rates for special moves depending on the customers needs. Tell us about your move and we will be in touch promptly!</p>
     </div>
     <form name="quote" netlify>
     <div class="form-row">
       <label for="full-name">Name</label>
       <input id="full-name" name="full-name" type="text" placeholder="First Last" required>
+    </div>
+    <div class="form-row">
+      <label for="tel">Telephone</label>
+      <input id="tel" name="tel" type="tel" placeholder="123-456-7891" required>
     </div>
     <div class="form-row">
       <label for="email">Email</label>
@@ -155,6 +155,16 @@
              type="email"
              placeholder="joe@example.com"
              required/>
+    </div>
+    <div class="form-row">
+      <label for="bedroomnumber">Bedrooms</label>
+      <select id="bedroomnumber">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </select>
     </div>
     <fieldset class="legacy-form-row">
       <legend>Move Type</legend>
@@ -186,8 +196,8 @@
              type="date" required/>
     </div>
     <div class="form-row">
-      <label for="message">Message</label>
-      <textarea id="message" name="message"></textarea>
+      <label for="message">Tell us more</label>
+      <textarea id="message" name="message" placeholder="eg. townhouse, basement suite, bungalow. Other particular items such as, pianos and any other necessary requirements."></textarea>
     </div>
     <div class="form-row">
       <input type="submit">
