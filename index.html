@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/skeleton.css">
   <link rel="stylesheet" href="styles/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,17 +36,36 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="section header">
+  <header class="section header" id="main-menu-toggle">
     <div class="rower">
       <h3 class="">On Moving Day</h3>
       <nav class="nav">
         <a class="active" href="#">Home</a>
         <a href="#services">Our Services</a>
         <a href="#services1">Quotes</a>
-
       </nav>
+      <a href="#main-menu" aria-label="open main menu" class="menu-toggle">
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
     </div>
-  </div>
+    <div id="main-menu" class="main-menu" aria-label="Main menu">
+      <a href="#main-menu-toggle"
+         id="main-menu-close"
+         class="menu-close"
+         aria-label="Close Main Menu">
+         <span class="fa fa-close" aria-hidden="true"></span>
+      </a>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#services1">Quote Us</a></li>
+      </ul>
+    </div>
+    <a href="#main-menu-toggle"
+       class="backdrop"
+       tabindex='-1'
+       aria-hidden="true" hidden>
+    </a>
   </header>
   <div class="section hero">
     <div class="rower">
