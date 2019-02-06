@@ -384,7 +384,7 @@ html
                 max-width: 960px
         .footer-social
             display: flex
-            justify-content: space-between
+            justify-content: flex-end
             width: 50%
             @media (min-width: 550px)
                 width: 25%
@@ -392,9 +392,10 @@ html
         .footer-links
             display: flex
             justify-content: space-between
+            transition: 0.2s
             a
                 padding: 0px 15px
-
+                transition: 0.5s
 // elements
 .social-icons
     height: 25px
@@ -410,4 +411,6 @@ html
     display: inline-flex
 
 .cls-1:hover
-    fill: aqua
+    fill: $orangey
+.instagram
+    transition: 0.3s
